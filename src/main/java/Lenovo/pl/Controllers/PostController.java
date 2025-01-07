@@ -27,7 +27,7 @@ public class PostController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
-    @PostMapping
+    @PostMapping("/add")
     public Post createPost(@RequestBody Post post){
         return postService.createPost(post);
     }
